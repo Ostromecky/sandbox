@@ -40,7 +40,6 @@
           "extractLicenses": true,
           "sourceMap": false,
           "aot": true,
-          "extractCss": true,
           "namedChunks": false
         },
         "development": {
