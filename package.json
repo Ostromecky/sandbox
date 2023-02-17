@@ -1,11 +1,11 @@
 {
+  "homepage" : "https://ostromecky.github.io/sandbox/",
   "name": "sandbox",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
     "start": "nx serve",
     "build": "nx build",
-    "build:gh": "nx build --prod --output-path=docs",
     "test": "nx test"
   },
   "private": true,
