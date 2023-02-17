@@ -32,7 +32,7 @@ jobs:
 
       - name: Install dependencies
         run: npm ci --cache .npm --prefer-offline
-      
+
       - name: Build App
         run: npm run build --if-present
 
@@ -46,27 +46,25 @@ jobs:
     needs: build
     environment:
       name: github-pages
+      url: ${{steps.deployment.outputs.page_url}}
 
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
+      - name: Download Artifact
+        uses: actions/download-artifact@master
+        with:
+          name: sandbox-artifact
+          path: .
 
       - name: Setup Pages
         uses: actions/configure-pages@v3
 
-      - name: Download Artifact
-        uses: actions/download-artifact@v2
-        with:
-          name: sandbox-artifact
-          path: dist
-
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          path: "dist/sandbox"
+          path: .
 
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@main
