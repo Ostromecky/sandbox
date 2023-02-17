@@ -34,7 +34,7 @@ jobs:
         run: npm ci --cache .npm --prefer-offline
       
       - name: Build App
-        run: npm run build:gh --if-present
+        run: npm run build --if-present
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v2
