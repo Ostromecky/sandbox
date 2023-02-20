@@ -429,7 +429,7 @@ import { Component, ViewEncapsulation } from "@angular/core";
     </style>
     <div class="wrapper">
       <button routerLink="/page">Navigate</button>
-      <img src="assets/icotera-logo-dark.svg" />
+      <!-- <img src="assets/icotera-logo-dark.svg" /> -->
       <div class="container">
         <!--  WELCOME  -->
         <div id="welcome">
