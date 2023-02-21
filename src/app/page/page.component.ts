@@ -1,13 +1,13 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: "app-page",
+  selector: 'app-page',
   template: `
     <h1>Welcome to the Page</h1>
     <div class="ico-logo-container">
       <img src="assets/icotera-logo-dark.svg" />
     </div>
-  `,
+  `
 })
 export class PageComponent implements OnInit {
   constructor() {}
