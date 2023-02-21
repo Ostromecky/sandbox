@@ -6,8 +6,9 @@ import { Component, OnInit } from '@angular/core';
     <h1>Welcome to the Page</h1>
     <div class="ico-logo-container">
       <img src="assets/icotera-logo-dark.svg" />
-    </div>
-  `
+    </div>,
+  `,
+  standalone: true
 })
 export class PageComponent implements OnInit {
   constructor() {}
