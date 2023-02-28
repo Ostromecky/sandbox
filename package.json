@@ -21,7 +21,6 @@
     "angular-three": "^1.9.10",
     "rxjs": "~7.5.0",
     "three": "^0.149.0",
-    "three-stdlib": "^2.21.8",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
   },
